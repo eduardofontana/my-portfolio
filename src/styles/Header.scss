@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+.text {
+    font-family: 'Prosto One', cursive;
+    font-size: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+
+        .letter {
+            transition: ease-out 1s;
+            transform: translateY(40%);
+        }
+
+        &:hover {
+            .letter {
+                transform: translateY(-200%);
+            }
+        }
+    }
+}
